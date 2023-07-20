@@ -85,3 +85,11 @@
     }
     
 }
+
+
+@media (max-width: 480px) {
+    .header__wrapper {
+        padding: 30px 24px;
+    }
+    
+}
