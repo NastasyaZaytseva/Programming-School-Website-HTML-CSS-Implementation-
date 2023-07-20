@@ -4,7 +4,8 @@
 }
 
 .header__wrapper {
-    max-width: 1220px;
+    max-width: var(--layout-width);
+    padding: 40px 24px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -27,11 +28,32 @@
     color: var(--color-link-hover);
 }
 
+.header__mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+} 
+
+@media (max-width: 960px) {
+    .header__login {
+        display: none;
+    }
+    .header__mobile-menu-button {
+        display: block;
+    } 
+
+    .header__logo {
+        max-width: 174px;
+    }
+    
+}
+
 .menu {
     list-style: none;
     display: flex;
     gap: 40px;
     cursor: pointer;
+    margin: 0;
 }
 
 .menu__item {
@@ -55,4 +77,11 @@
 .menu__item a:hover {
     color: var(--color-link-hover);
 
+}
+
+@media (max-width: 960px) {
+    .menu {
+        display: none;
+    }
+    
 }
