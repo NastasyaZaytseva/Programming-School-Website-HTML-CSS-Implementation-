@@ -9,10 +9,16 @@
     --color-stroke: #4D5064;
     --color-button: #6C38CC;
     --gradient:linear-gradient(158deg, #D77BE5 0%, #BE63E5 34.69%, #6C38CC 100%);
+    --color-footer: #101114;
+    --color-pink: #E47AD5;
 
     --border-8: 8px;
     --border-10: 10px;
 
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
