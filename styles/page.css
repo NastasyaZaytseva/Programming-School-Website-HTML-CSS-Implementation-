@@ -125,6 +125,12 @@ background: var(--color-bg-light);
 .card_32 {
     padding: 32px;
 }
+
+
+.button__more {
+    text-align: center;
+
+}
 @media (max-width: 1200px) {
     .hero {
         flex-direction: column;
