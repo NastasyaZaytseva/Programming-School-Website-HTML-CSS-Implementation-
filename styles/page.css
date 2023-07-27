@@ -131,6 +131,25 @@ background: var(--color-bg-light);
     text-align: center;
 
 }
+
+@media (max-width: 860px) {
+    .post {
+        flex-direction: column;
+        justify-self: center;
+    }
+    .blog__h2 {
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 40.8px */
+    }
+    .blog__h4 {
+        font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 25.2px */
+    }
+}
 @media (max-width: 1200px) {
     .hero {
         flex-direction: column;
@@ -171,4 +190,9 @@ background: var(--color-bg-light);
         gap: 16px;
     }
 
+}
+
+.chip__wrapper {
+    display: flex;
+    gap: 24px;
 }
