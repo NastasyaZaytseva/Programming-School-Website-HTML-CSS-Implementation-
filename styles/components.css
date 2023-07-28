@@ -75,6 +75,8 @@ color: var(--color-text);
 border: 1px solid var(  --color-stroke);
 border-radius: var(--border-10);
 padding: 8px 16px;
+word-wrap: nowrap;
+
 }
 
 .chip:hover {
@@ -90,5 +92,85 @@ padding: 8px 16px;
     border: 1px solid var(  --color-primary);
 background: var(  --color-primary);
 padding: 8px 16px;
+
+}
+
+.course_card {
+    background: var(--color-bg-medium);
+    border-radius: var(--border-10);
+    color: var(--color-text);
+    width: 360px;
+}
+
+.courses__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+
+.card_img {
+    width: 360px;
+border-radius: var(--border-10);
+}
+
+.card_tag {
+    display: flex;
+    gap: 12px;
+    
+}
+
+.rate {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 19.2px */
+color: var(--color-text);
+border: 1px solid var(  --color-stroke);
+border-radius: 17px;
+padding: 6px 12px;
+margin-top: 24px;
+margin-bottom: 30px;
+
+}
+
+
+.card_chip {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 19.2px */
+color: var(--color-text);
+border: 1px solid var(  --color-stroke);
+border-radius: 17px;
+padding: 6px 12px;
+margin-top: 24px;
+margin-bottom: 30px;
+}
+
+.card-p {
+    font-family: Fira Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 21.6px */
+color: var(--color-stroke);
+}
+
+.card_h3 {
+    padding-bottom: 0;
+
+}
+.card_price {
+ background-color: var(--color-bg-light);
+ width: 360px;
+ border-radius: var(--border-10);
 
 }
