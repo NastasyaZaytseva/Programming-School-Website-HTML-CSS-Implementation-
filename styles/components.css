@@ -168,9 +168,11 @@ color: var(--color-stroke);
     padding-bottom: 0;
 
 }
-.card_price {
- background-color: var(--color-bg-light);
- width: 360px;
- border-radius: var(--border-10);
-
+.card_bottom {
+    background-color: var(--color-bg-light);
+    padding: 24px;
+display: grid;
+grid-template-columns: 1fr auto;
+align-items: center;
+border-radius: var(--border-10);
 }
