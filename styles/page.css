@@ -33,6 +33,7 @@
     gap: 32px;
 
 }
+
 .blog {
     margin-bottom: 32px;
 }
@@ -76,21 +77,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    width: 742px;;
+    width: 742px;
+    ;
     margin-bottom: 32px;
 }
+
 .post__p {
     font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 24px */
-    width: 742px;;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    width: 742px;
+    ;
     margin-bottom: 32px;
 }
 
 .blog__post {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
 
 }
 
@@ -108,8 +113,9 @@ line-height: 150%; /* 24px */
     /* 19.2px */
 }
 
-.blog__post {border-radius: 10px;
-background: var(--color-bg-light);
+.blog__post {
+    border-radius: 10px;
+    background: var(--color-bg-light);
 
 }
 
@@ -117,11 +123,13 @@ background: var(--color-bg-light);
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-background: var(--color-bg-light);
+    background: var(--color-bg-light);
 }
+
 .post_button {
     display: block;
 }
+
 .card_32 {
     padding: 32px;
 }
@@ -137,22 +145,31 @@ background: var(--color-bg-light);
         flex-direction: column;
         justify-self: center;
     }
+
     .blog__h2 {
         font-size: 34px;
         font-style: normal;
         font-weight: 400;
-        line-height: 120%; /* 40.8px */
+        line-height: 120%;
+        /* 40.8px */
     }
+
     .blog__h4 {
         font-size: 21px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 25.2px */
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        /* 25.2px */
     }
 }
+
 @media (max-width: 1200px) {
     .hero {
         flex-direction: column;
+    }
+
+    .courses__wrapper {
+        grid-template-columns: repeat(2, 1fr)
     }
 
     .hero__cta {
@@ -162,6 +179,11 @@ line-height: 120%; /* 25.2px */
     .hero__h1 {
         text-align: center;
     }
+    .trust__platform {
+        grid-template-columns: [start] repeat(2, 1fr) [end];
+
+    }
+  
 }
 
 @media (max-width: 640px) {
@@ -172,9 +194,17 @@ line-height: 120%; /* 25.2px */
         /* 36px */
     }
 
+    .courses__wrapper {
+        grid-template-columns: 1fr;
+    }
+
     .hero__right {
         width: 100%;
     }
+   .trust__platform {
+		grid-template-columns: [start] 1fr [end];
+	}
+
 }
 
 @media (max-width: 480px) {
@@ -209,3 +239,100 @@ line-height: 120%; /* 25.2px */
 .card_content {
     margin-left: 24px;
 }
+
+.trust__wrapper {
+    max-width: var(--layout-width);
+    padding: 60px 24px 100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.trust__statistic {
+    display: grid;
+	grid-template-columns: [start] repeat(3, 1fr) [end];
+	gap: 0 75px;
+}
+
+.trust__h3 {
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 55.2px */
+    background: var(--grad-1, linear-gradient(158deg, #D77BE5 0%, #BE63E5 34.69%, #6C38CC 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trust__p {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 21.6px */
+}
+
+.trust__content {
+
+    width: 360px;
+    height: 188px;
+    flex-shrink: 0;
+    background-color: var(--color-bg-light);
+    border-radius: var(--border-10);
+    padding: 48px 24px;
+}
+
+.section__trust {
+    background-color: var(--color-bg-medium);
+}
+
+.trust__rate {
+    display: grid;
+	grid-template-columns: [start] repeat(3, 1fr) [end];
+	gap: 0 75px;
+}
+
+.trust__rating_content {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    height: 113px;
+
+    background-color: var(--color-bg-light);
+    border-radius: var(--border-10);
+}
+
+.rating_number {
+    text-align: left;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 64.8px */
+    color: var(--color-text);
+    padding: 24px 36px;
+}
+
+.schools {
+    display: flex;
+    flex-direction: column;
+    width: 113.505px;
+
+    align-items: right;
+    padding-left: 12px;
+    padding-top: 36px;
+}
+
+.trust__h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 43.2px */
+    padding-top: 72px;
+}
+
+
